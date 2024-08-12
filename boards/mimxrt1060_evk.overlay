@@ -1,0 +1,12 @@
+&lpi2c1 {
+    status = "okay";
+    pinctrl-0 = <&pinmux_lpi2c1>;
+    pinctrl-names = "default";
+
+    vl53ldk: vl53ldk@52 {
+        compatible = "st,vl53l0x";
+        reg = <0x52>;
+        label = "VL53LDK";
+        xshut-gpios = <&gpio1 12 GPIO_ACTIVE_HIGH>; 
+    };
+};

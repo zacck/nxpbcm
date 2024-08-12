@@ -6,6 +6,8 @@
 # python
 .venv
 
+.cache/
+
 # build
 /build*
 /twister-out*
